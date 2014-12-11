@@ -10,6 +10,11 @@ import de.uni_koeln.jhermes.easysequence.preprocessing.FeatureUnitTokenizer;
 import de.uni_koeln.jhermes.easysequence.preprocessing.StopwordFilter;
 import de.uni_koeln.jhermes.easysequence.tree.NGramTree;
 
+/**
+ * An application to find matching sequences between two documents 
+ * @author jhermes
+ *
+ */
 public class ElectionprogramComparerApplication {
 
 	public static void main(String[] args) throws IOException {
