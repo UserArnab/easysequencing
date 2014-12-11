@@ -19,7 +19,7 @@ public class ElectionprogramComparerApplication {
 
 	public static void main(String[] args) throws IOException {
 		
-		// Konfigurable Items
+		// Konfigurable items
 		String electionmanifesto = "electionprograms/wahlprogramm_hessen.txt";
 		String coalitionagreement = "electionprograms/koalitionsvertrag_hessen.txt";
 		boolean deleteStopwords = false;
@@ -73,6 +73,7 @@ public class ElectionprogramComparerApplication {
 		//Combine continuing sequences
 		List<List<String>> combined = tree.combineSequences(found);
 		System.out.println("Combined sequences found: " + combined.size());
+		System.out.println();
 		for (List<String> list : combined) {
 			System.out.println(list.size()  + ": " + list);
 			System.out.println();
