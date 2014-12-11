@@ -19,7 +19,7 @@ public class ElectionprogramComparerApplication {
 
 	public static void main(String[] args) throws IOException {
 		
-		// Konfigurable items
+		// Configuration section
 		String electionmanifesto = "electionprograms/wahlprogramm_hessen.txt";
 		String coalitionagreement = "electionprograms/koalitionsvertrag_hessen.txt";
 		boolean deleteStopwords = false;
