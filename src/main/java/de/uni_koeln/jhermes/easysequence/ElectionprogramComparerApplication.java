@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.List;
 
 import de.uni_koeln.jhermes.easysequence.preprocessing.FeatureUnitTokenizer;
+import de.uni_koeln.jhermes.easysequence.preprocessing.Stemmer;
 import de.uni_koeln.jhermes.easysequence.preprocessing.StopwordFilter;
 import de.uni_koeln.jhermes.easysequence.tree.NGramTree;
 
@@ -23,6 +24,7 @@ public class ElectionprogramComparerApplication {
 		String electionmanifesto = "electionprograms/wahlprogramm_hessen.txt";
 		String coalitionagreement = "electionprograms/koalitionsvertrag_hessen.txt";
 		boolean deleteStopwords = false;
+		boolean stemWords = false;
 		int minSequenceLength = 15;
 		
 		
@@ -60,6 +62,13 @@ public class ElectionprogramComparerApplication {
 			kaTokens = filter.filterStopwords(kaTokens);	
 			System.out.println("Count of tokens em without stopwords: " + emTokens.size());
 			System.out.println("Count of tokens ka without stopwords: " + kaTokens.size());
+		}
+		
+		if(stemWords){
+			Stemmer stemmer = new Stemmer();
+			System.out.println("Stemming words");
+			emTokens = stemmer.getStems(emTokens);
+			kaTokens = stemmer.getStems(kaTokens);
 		}
 		
 		//Build a sequence tree from the em tokens
