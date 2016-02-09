@@ -8,6 +8,6 @@ or modify the pathes within the configuration section to your own documents.
 You can choose between sequences with or without (german) stopwords 
 and define the minimum length of the matching sequences that should be returned.
 
-The program was used in a case study of a coalition between the german Greens and the SPD, and referenced in the doctoral thesis of Niko Switek "Bündnis 90/Die Grünen. Koalitionsentscheidungen in den Ländern.", 
+The program was used within a case study of a coalition between the german Greens and the SPD in Hessen, and is referenced in the doctoral thesis of Niko Switek "Bündnis 90/Die Grünen. Koalitionsentscheidungen in den Ländern.", 
 @see http://nrwschool.de/2015/09/10/neuerscheinung-dr-niko-switek-buendnis-90die-gruenen-koalitionsentscheidungen-in-den-laendern/
 
